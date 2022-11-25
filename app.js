@@ -26,7 +26,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/clientsDB");
+mongoose.connect(process.env.MY_MONGO_LINK);
 
 const clientSchema = new mongoose.Schema({
   username: String,
@@ -55,7 +55,7 @@ passport.use(
     (accessToken, refreshToken, profile, done) => {
       Client.findOne({ googleId: profile.id }).then((currentUser) => {
         if (currentUser) {
-          console.log("User is" + currentUser);
+          // console.log("User is" + currentUser);
           return done(null, currentUser);
         } else {
           new Client({
@@ -65,7 +65,7 @@ passport.use(
           })
             .save()
             .then((newUser) => {
-              console.log("new user is" + newUser);
+              // console.log("new user is" + newUser);
               return done(null, newUser);
             });
         }
@@ -184,6 +184,8 @@ app.post("/logout", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log(`🌍 => PORT STARTED AT 3000`);
+const PORT = process.env.PORT;
+
+app.listen(PORT || 3000, () => {
+  console.log(`🌍 => PORT SUCCESSFULLY STARTED!`);
 });
