@@ -1,0 +1,64 @@
+<%- include("header") -%>
+
+<div class="user-logo">
+  <p><%= userDetails %></p>
+</div>
+<div class="log-out">
+  <form action="/logout" method="post">
+    <button>
+      <i class="fa-solid fa-power-off"></i>
+      logout
+    </button>
+  </form>
+</div>
+
+<div class="mern-temp-holder">
+  <div class="mongo">
+    <div class="mongo-img">
+      <h1>MONGO</h1>
+    <img src="/images/mongodb.svg" alt="mongo-image">
+    </div>
+    <div class="about-mongo">
+      <p>MongoDB stores data in flexible, JSON-like documents, meaning fields can vary from document to document and data structure can be changed over time</p>
+      <p>The document model maps to the objects in your application code, making data easy to work with</p>
+      <p>MongoDB is a distributed database at its core, so high availability, horizontal scaling, and geographic distribution are built in and easy to use</p>
+      <p>MongoDB is free to use. Versions released prior to October 16, 2018 are published under the AGPL. All versions released after October 16, 2018, including patch fixes for prior versions</p>
+    </div>
+  </div>
+  <div class="express">
+    <div class="express-img">
+      <h1>EXPRESS</h1>
+      <img src="/images/express.svg" alt="express-img">
+    </div>
+    <div class="about-express">
+      <p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.</p>
+      <p>With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy.</p>
+      <p>Express provides a thin layer of fundamental web application features, without obscuring Node.js features that you know and love.</p>
+      <p>Many popular frameworks are based on Express.</p>
+    </div>
+  </div>
+  <div class="react">
+    <div class="react-img">
+      <h1>EXPRESS</h1>
+      <img src="/images/react.svg" alt="react-img">
+    </div>
+    <div class="about-react">
+      <p>React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.</p>
+      <p>Build encapsulated components that manage their own state, then compose them to make complex UIs.</p>
+      <p>React can also render on the server using Node and power mobile apps using React Native.</p>
+      <p>React allows you to interface with other libraries and frameworks.</p>
+    </div>
+  </div>
+  <div class="node">
+    <div class="node-img">
+      <h1>EXPRESS</h1>
+      <img src="/images/node-js.svg" alt="node-img">
+    </div>
+    <div class="about-node">
+      <p>As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.</p>
+      <p>This is in contrast to today's more common concurrency model, in which OS threads are employed. Thread-based networking is relatively inefficient and very difficult to use.</p>
+      <p> Node.js takes the event model a bit further. It presents an event loop as a runtime construct instead of as a library.</p>
+      <p>Node.js being designed without threads doesn't mean you can't take advantage of multiple cores in your environment.</p>
+    </div>
+  </div>
+</div>

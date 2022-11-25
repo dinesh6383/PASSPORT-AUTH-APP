@@ -1,0 +1,28 @@
+<%- include("header") -%>
+<div class="login-comp">
+  <i class="fa-solid fa-book-open"></i>
+  <p class="title">Register your account</p>
+  <p class="err-message"><%= errorMsg %></p>
+  <form action="/register" method="post">
+    <input type="text" placeholder="Name" name="fname" />
+    <br />
+    <input type="email" placeholder="Email" name="username" />
+    <br />
+    <input type="password" placeholder="password" name="password" />
+    <br />
+    <button type="submit">REGISTER</button>
+  </form>
+  <div class="or-tab">or</div>
+  <a href="/auth/google">
+    <div class="google-btn">
+      <i class="fa-brands fa-google"></i>
+      <p>Sign up with google</p>
+    </div>
+  </a>
+  <a href="/auth/facebook">
+    <div class="fb-btn">
+      <i class="fa-brands fa-facebook-f"></i>
+      <p>Sign up with facebook</p>
+    </div>
+  </a>
+</div>

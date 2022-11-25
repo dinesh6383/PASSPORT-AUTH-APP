@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300;1,500;1,800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: #bae6fd;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.logo > p {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0284c7;
+  font-style: italic;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #e0f2fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.login-comp {
+  background-color: white;
+  width: max-content;
+  padding: 20px 120px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-comp > i {
+  font-size: 40px;
+  color: #0284c7;
+}
+
+.login-comp * {
+  margin-bottom: 20px;
+}
+
+.login-comp > .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.login-comp > form > input,
+button {
+  outline: none;
+  border: 1px solid #bae6fd;
+  padding: 10px 10px;
+  width: 300px;
+  border-radius: 8px;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.login-comp > form > button {
+  background-color: #1974a5;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.login-comp > a {
+  text-decoration: none;
+}
+
+.or-tab {
+  margin: 5px 0px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.or-tab::after,
+.or-tab::before {
+  content: "";
+  display: inline-block;
+  width: 120px;
+  height: 1px;
+  background-color: rgb(196, 194, 194);
+}
+
+.google-btn,
+.fb-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #dd4b39;
+  border-radius: 8px;
+  padding: 0px 10px;
+  cursor: pointer;
+}
+
+.google-btn > i,
+.fb-btn > i {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  margin: auto 0px;
+  border-right: 1px solid gray;
+  padding: 10px 9px;
+  padding-left: 0px;
+}
+
+.fb-btn {
+  background-color: #3b5998;
+}
+
+.fb-btn > i {
+  padding-right: 15px;
+}
+
+.google-btn > p,
+.fb-btn > p {
+  margin: auto 15px;
+  color: white;
+  font-weight: 600;
+}
+
+.reg-text a {
+  text-decoration: none;
+  font-weight: 400;
+  color: blue;
+}
+
+.err-message {
+  font-size: 12px;
+  color: red;
+  font-weight: 600;
+}
+
+.user-logo {
+  position: absolute;
+  top: 20px;
+  right: 150px;
+  border-radius: 8px;
+  background-color: rgb(249, 251, 252);
+  padding: 5px 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px black;
+  cursor: pointer;
+}
+
+.log-out {
+  position: absolute;
+  top: 18px;
+  right: 50px;
+  box-shadow: 1px 1px 1px 1px black;
+  border-radius: 8px;
+  background-color: rgb(249, 251, 252);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.log-out > form > button {
+  width: fit-content;
+  height: 33px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.log-out > form > button > i {
+  margin-right: 5px;
+  margin-top: 2px;
+}
+
+.mern-temp-holder {
+  width: 80%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.mern-temp-holder * {
+  margin-top: 20px;
+}
+
+
+
+.mongo-img > img, .express-img > img, .react-img > img, .node-img > img{
+  width:150px;
+  margin-top: 20px;
+}
+
+.mongo-img, .express-img, .react-img, .node-img{
+  position: relative;
+}
+
+.mongo-img::after, .express-img::after, .react-img::after, .node-img::after{
+  content: "";
+  display: inline-block;
+  width:200px;
+  height:2px;
+  background-color: grey;
+  transform: rotate(90deg);
+  position: absolute;
+  right:-130px;
+  top:110px;
+}
+
+.mongo, .express, .react, .node{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 1px 1px 1px 1px black;
+  border-radius: 8px;
+  background-color: rgb(249, 251, 252);
+  padding: 25px;
+}
+
+
+
+.about-mongo, .about-express, .about-react, .about-node{
+  font-size:20px;
+  font-weight:600;
+  margin-left: 50px;
+}
+
+.about-mongo *, .about-express *, .about-react *, .about-node * {
+  margin-top: 20px;
+}
