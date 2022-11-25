@@ -55,7 +55,6 @@ passport.use(
     (accessToken, refreshToken, profile, done) => {
       Client.findOne({ googleId: profile.id }).then((currentUser) => {
         if (currentUser) {
-          // console.log("User is" + currentUser);
           return done(null, currentUser);
         } else {
           new Client({
@@ -65,7 +64,6 @@ passport.use(
           })
             .save()
             .then((newUser) => {
-              // console.log("new user is" + newUser);
               return done(null, newUser);
             });
         }
