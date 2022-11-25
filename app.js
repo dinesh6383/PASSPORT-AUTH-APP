@@ -49,7 +49,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL: "http://localhost:3000/auth/google/home",
+      callbackURL: "https://cryptic-depths-15042.herokuapp.com/auth/google/home",
       userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo",
     },
     (accessToken, refreshToken, profile, done) => {
@@ -77,7 +77,7 @@ passport.use(
     {
       clientID: process.env.FACEBOOK_CLIENT_ID,
       clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
-      callbackURL: "http://localhost:3000/auth/facebook/home",
+      callbackURL: "https://cryptic-depths-15042.herokuapp.com/auth/facebook/home",
     },
     function (accessToken, refreshToken, profile, done) {
       console.log(profile);
